@@ -1,13 +1,26 @@
 <main>
     <h1>Rock Paper Scissors game</h1>
     <script>
-function playRound (playerSelection, computerSelection) {
 
+// Game         
+function playRound (playerSelection, computerSelection) {
+    if (playerSelection === "rock" && computerSelection === "scissors") {
+        return "Rock beats scissors; Congrats You won!"
+    } else if (playerSelection === "rock" && computerSelection === "paper") {
+        return "Paper beats rock; sorry you lose."
+    }  else if (playerSelection === "rock" && computerSelection === "rock") {
+        return "No winner; it's a draw!"
+    }
 }
 
-const playerSelection = "rock"
+let playRound =
+
+// Variables
+const playerSelection = parseInt(prompt("Please enter your selection"))
 const computerSelection = computerPlay()
 
+
+// Computer Choosing Answer
 function computerPlay () {
     const options = [
         "rock",
@@ -19,7 +32,7 @@ function computerPlay () {
     return rpsAnswer
 }
 
-console.log(computerPlay())
+console.log(playRound())
 
     </script>
 </main>
