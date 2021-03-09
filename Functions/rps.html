@@ -1,0 +1,25 @@
+<main>
+    <h1>Rock Paper Scissors game</h1>
+    <script>
+function playRound (playerSelection, computerSelection) {
+
+}
+
+const playerSelection = "rock"
+const computerSelection = computerPlay()
+
+function computerPlay () {
+    const options = [
+        "rock",
+        "paper",
+        "scissors"
+    ]
+    const rpsAnswer = options[Math.floor(Math.random() * options.length)]
+    
+    return rpsAnswer
+}
+
+console.log(computerPlay())
+
+    </script>
+</main>
