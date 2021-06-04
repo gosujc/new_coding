@@ -3,7 +3,7 @@
     <script>
 
 // Game         
-function playRound (playerSelection, computerSelection) {
+const playRound = function(playerSelection, computerSelection) {
     if (playerSelection === "rock" && computerSelection === "scissors") {
         return "Rock beats scissors; Congrats You won!"
     } else if (playerSelection === "rock" && computerSelection === "paper") {
@@ -13,10 +13,8 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-let playRound =
-
 // Variables
-const playerSelection = parseInt(prompt("Please enter your selection"))
+const playerSelection = "rock"
 const computerSelection = computerPlay()
 
 
